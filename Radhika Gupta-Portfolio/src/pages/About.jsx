@@ -245,36 +245,50 @@ const About = () => {
 
         </VerticalTimeline>
       </section>
-      <section className="mt-20">
-        <div className="relative">
-          <div className="h-px w-full bg-pink-500/30"></div>
-          <div className="absolute inset-0 h-px w-full bg-pink-500 blur-sm opacity-60"></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-12">
-          <div className="max-w-4xl">
+      <section className="mt-16">
 
-            <p className="text-[15px] sm:text-base leading-8 text-gray-400">
+        {/* Divider */}
+
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="h-px w-full bg-pink-500/25"></div>
+        </div>
+
+        {/* Ending Text */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.6 }}
+          className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16"
+        >
+          <div className="max-w-4xl mx-auto text-center">
+
+            <p className="text-[15px] sm:text-base leading-9 text-gray-400">
               You can find more of my projects on the{" "}
               <Link
                 to="/projects"
-                className="text-pink-400 font-medium hover:text-pink-300 transition-colors duration-300"
+                className="font-semibold text-pink-400 hover:text-pink-300 transition-colors"
               >
                 Projects
               </Link>{" "}
-              page and explore the technologies, ideas, and problem-solving approach
-              behind each of them.
+              page and explore the technologies, ideas, and problem-solving
+              approach behind each of them.
             </p>
 
-            <p className="mt-6 text-[15px] sm:text-base leading-8 text-gray-400">
+            <p className="mt-8 text-[15px] sm:text-base leading-9 text-gray-400">
               If you're looking for a developer who codes with{" "}
               <span className="font-semibold text-white">
                 clarity, consistency, and creativity
               </span>
-              —<br className="hidden sm:block" />
+              —
+            </p>
+
+            <p className="mt-2 text-[15px] sm:text-base leading-9 text-gray-400">
               Let's connect via the{" "}
               <Link
                 to="/contact"
-                className="text-pink-400 font-medium hover:text-pink-300 transition-colors duration-300"
+                className="font-semibold text-pink-400 hover:text-pink-300 transition-colors"
               >
                 Contact
               </Link>{" "}
@@ -282,7 +296,8 @@ const About = () => {
             </p>
 
           </div>
-        </div>
+        </motion.div>
+
       </section>
     </main>
   );

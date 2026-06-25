@@ -124,6 +124,44 @@ export default function Skills() {
           ))}
 
         </div>
+        <section className="mt-16">
+
+          {/* Divider */}
+
+          <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div className="h-px w-full bg-pink-500/25"></div>
+          </div>
+
+          {/* Ending Text */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.6 }}
+            className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16"
+          >
+            <div className="max-w-4xl mx-auto text-center">
+
+              <p className="text-[15px] sm:text-base leading-9 text-gray-400">
+                Every technology I learn is another step toward building scalable,
+                impactful, and user-focused software. I believe strong fundamentals,
+                continuous practice, and curiosity are the foundation of becoming a
+                great software engineer.
+              </p>
+
+              <p className="mt-8 text-[15px] sm:text-base leading-9 text-gray-400">
+                I'm constantly expanding my skill set by exploring{" "}
+                <span className="font-semibold text-white">
+                  Full-Stack Development, Data Structures & Algorithms, and Artificial Intelligence
+                </span>
+                , while staying up to date with modern tools and best practices.
+              </p>
+
+            </div>
+          </motion.div>
+
+        </section>
 
       </div>
     </section>
