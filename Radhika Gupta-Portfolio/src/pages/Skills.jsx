@@ -65,7 +65,7 @@ const categories = [
 
 export default function Skills() {
   return (
-    <section className="bg-[#09090B] py-24 md:py-32">
+    <section className="bg-[#09090B] pt-16 pb-24 md:pt-20 md:pb-28 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
 
         <motion.h2
