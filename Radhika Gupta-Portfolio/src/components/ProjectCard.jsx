@@ -16,11 +16,11 @@ const ProjectCard = ({
             onClick={() => window.open(liveLink, "_blank")}
             className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl transition-all duration-300 hover:border-pink-500/40"
         >
-            <div className="overflow-hidden">
+            <div className="overflow-hidden bg-[#09090B]">
                 <img
                     src={image}
                     alt={title}
-                    className="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="h-60 w-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
             </div>
 

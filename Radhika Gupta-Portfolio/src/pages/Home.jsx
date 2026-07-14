@@ -11,6 +11,9 @@ import currencyConverterImg from "../assets/ProjectImages/currencyConverterImg.p
 import ecommerceImg from "../assets/ProjectImages/ecommerceImg.png";
 import CodingProfileCard from "../components/CodingProfileCard";
 import { SiLeetcode, SiGeeksforgeeks, SiGithub } from "react-icons/si";
+import waveImg from "../assets/ProjectImages/waveImg.png"
+import authServiceImg from "../assets/ProjectImages/authServiceImg.png"
+import profileImg from "../assets/ProjectImages/profileImg.png"
 
 const Home = () => {
     return (
@@ -66,8 +69,8 @@ const Home = () => {
                     <div className="mt-10 flex flex-wrap justify-center gap-5 lg:justify-start">
 
                         <a
-                            href="/RadhikaGupta.pdf"
-                            download="RadhikaGupta.pdf"
+                            href="/RadhikaGuptaResume.pdf"
+                            download="RadhikaGuptaResume.pdf"
                             className="rounded-xl bg-pink-500 px-7 py-3 font-semibold transition hover:bg-pink-600"
                         >
                             Download Resume
@@ -134,8 +137,9 @@ const Home = () => {
                         <div className="absolute inset-0 rounded-full bg-pink-500/20 blur-3xl"></div>
 
                         <img
-                            alt=""
-                            className="relative h-87.5 w-87.5 rounded-full border border-white/10 object-cover md:h-112.5 md:w-112.5"
+                            src={profileImg}
+                            alt="Radhika Gupta"
+                            className="relative h-87.5 w-87.5 rounded-full border border-white/10 object-cover md:h-112.5 md:w-112.5 z-9999"
                         />
 
                     </div>
@@ -382,32 +386,53 @@ I believe that great software is built through curiosity, consistency, and conti
 
                 <div className="grid gap-8 lg:grid-cols-3">
 
-                    <ProjectCard
-                        image={doodleDocImg}
-                        title="DoodleDoc"
-                        description="A feature-rich online whiteboard built with React, Konva, Zustand, and Tailwind CSS. Create drawings, shapes, text, and collaborate through room-based whiteboards with persistent storage."
-                        techStack={["React", "Konva", "Zustand", "Tailwind CSS"]}
-                        githubLink="https://github.com/Radhikagupta25/DoodleDoc"
-                        liveLink="https://doodle-doc.vercel.app/"
-                    />
+                    <motion.div
+                        initial={{ opacity: 0, y: 70 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: .5, delay: .3 }}
+                    >
+                        <ProjectCard
+                            image={waveImg}
+                            title="Wave - Real-Time Chat App"
+                            description="A full-stack real-time messaging platform with 1:1 and group chats, live typing indicators, read receipts, presence tracking, and in-app voice/video calling powered by Socket.io and ZegoCloud."
+                            techStack={["React", "Node.js", "Express.js", "MongoDB", "Socket.io", "JWT"]}
+                            githubLink="https://github.com/Radhikagupta25/wave"
+                            liveLink="https://wave-ashy-six.vercel.app/"
+                        />
+                    </motion.div>
 
-                    <ProjectCard
-                        image={currencyConverterImg}
-                        title="Currency Converter"
-                        description="A responsive currency converter that fetches real-time exchange rates and enables seamless conversion between multiple international currencies with a clean and intuitive interface."
-                        techStack={["React", "API", "JavaScript", "Tailwind CSS"]}
-                        githubLink="https://github.com/Radhikagupta25/CurrencyConverter"
-                        liveLink="https://currency-converter-nezt.vercel.app/"
-                    />
+                    <motion.div
+                        initial={{ opacity: 0, y: 70 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: .5, delay: .3 }}
+                    >
+                        <ProjectCard
+                            image={authServiceImg}
+                            title="Authentication Service"
+                            description="A production-ready, reusable authentication backend with JWT auth, refresh token rotation, Google OAuth, email verification, and Swagger-documented APIs for seamless integration across MERN apps."
+                            techStack={["Node.js", "Express.js", "MongoDB", "JWT", "Swagger"]}
+                            githubLink="https://github.com/Radhikagupta25/Authentication-Service"
+                            liveLink=""
+                        />
+                    </motion.div>
 
-                    <ProjectCard
-                        image={ecommerceImg}
-                        title="E-Commerce Website"
-                        description="A modern e-commerce application featuring product browsing, search, filtering, sorting, shopping cart functionality, and a responsive user experience powered by a REST API."
-                        techStack={["HTML", "CSS", "JavaScript", "REST API"]}
-                        githubLink="https://github.com/Radhikagupta25/E-commerce_website"
-                        liveLink="https://e-commerce-website-seven-kappa.vercel.app/"
-                    />
+                    <motion.div
+                        initial={{ opacity: 0, y: 70 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: .5 }}
+                    >
+                        <ProjectCard
+                            image={doodleDocImg}
+                            title="DoodleDoc"
+                            description="A feature-rich online whiteboard built with React, Konva, Zustand, and Tailwind CSS. Create drawings, shapes, text, and collaborate through room-based whiteboards with persistent storage."
+                            techStack={["React", "Konva", "Zustand", "Tailwind CSS"]}
+                            githubLink="https://github.com/Radhikagupta25/DoodleDoc"
+                            liveLink="https://doodle-doc.vercel.app/"
+                        />
+                    </motion.div>
 
                 </div>
             </motion.section>

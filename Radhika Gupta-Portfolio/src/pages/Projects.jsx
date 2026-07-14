@@ -3,6 +3,8 @@ import ProjectCard from "../components/ProjectCard";
 import doodleDocImg from "../assets/ProjectImages/doodleDocImg.png";
 import currencyConverterImg from "../assets/ProjectImages/currencyConverterImg.png";
 import ecommerceImg from "../assets/ProjectImages/ecommerceImg.png";
+import waveImg from "../assets/ProjectImages/waveImg.png"
+import authServiceImg from "../assets/ProjectImages/authServiceImg.png"
 
 const Projects = () => {
     return (
@@ -22,6 +24,38 @@ const Projects = () => {
                 </motion.div>
 
                 <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 70 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: .5, delay: .3 }}
+                    >
+                        <ProjectCard
+                            image={waveImg}
+                            title="Wave - Real-Time Chat App"
+                            description="A full-stack real-time messaging platform with 1:1 and group chats, live typing indicators, read receipts, presence tracking, and in-app voice/video calling powered by Socket.io and ZegoCloud."
+                            techStack={["React", "Node.js", "Express.js", "MongoDB", "Socket.io", "JWT"]}
+                            githubLink="https://github.com/Radhikagupta25/wave"
+                            liveLink="https://wave-ashy-six.vercel.app/"
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 70 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: .5, delay: .3 }}
+                    >
+                        <ProjectCard
+                            image={authServiceImg}
+                            title="Authentication Service"
+                            description="A production-ready, reusable authentication backend with JWT auth, refresh token rotation, Google OAuth, email verification, and Swagger-documented APIs for seamless integration across MERN apps."
+                            techStack={["Node.js", "Express.js", "MongoDB", "JWT", "Swagger"]}
+                            githubLink="https://github.com/Radhikagupta25/Authentication-Service"
+                            liveLink=""
+                        />
+                    </motion.div>
 
                     <motion.div
                         initial={{ opacity: 0, y: 70 }}
