@@ -5,6 +5,7 @@ import currencyConverterImg from "../assets/ProjectImages/currencyConverterImg.p
 import ecommerceImg from "../assets/ProjectImages/ecommerceImg.png";
 import waveImg from "../assets/ProjectImages/waveImg.png"
 import authServiceImg from "../assets/ProjectImages/authServiceImg.png"
+import ToddlerToPhD from "../assets/ProjectImages/ToddlerToPhD.png"
 
 const Projects = () => {
     return (
@@ -54,6 +55,28 @@ const Projects = () => {
                             techStack={["Node.js", "Express.js", "MongoDB", "JWT", "Swagger"]}
                             githubLink="https://github.com/Radhikagupta25/Authentication-Service"
                             liveLink=""
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 70 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
+                    >
+                        <ProjectCard
+                            image={ToddlerToPhD}
+                            title="ToddlerToPhD - AI Explanation Platform"
+                            description="A full-stack AI-powered learning platform that explains any topic across Toddler, Teenager, and Expert levels using level-aware prompt engineering and the Gemini API, with instant level switching and an adaptive user interface."
+                            techStack={[
+                                "React",
+                                "Node.js",
+                                "Express.js",
+                                "Gemini API",
+                                "Tailwind CSS",
+                            ]}
+                            githubLink="https://github.com/Radhikagupta25/ToddlerToPhD"
+                            liveLink="https://toddler-to-ph-d.vercel.app/"
                         />
                     </motion.div>
 
