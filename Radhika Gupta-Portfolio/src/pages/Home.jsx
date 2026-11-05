@@ -411,8 +411,8 @@ I believe that great software is built through curiosity, consistency, and conti
                         <ProjectCard
                             image={geoTimeImg}
                             title="GeoTime - Geospatial Intelligence Platform"
-                            description="A full-stack geospatial intelligence platform for exploring historical satellite imagery and monitoring environmental changes, including vegetation health, deforestation, urban expansion, and fire activity."
-                            techStack={["React", "Tailwind CSS", "Mapbox GL JS", "Node.js", "Express.js", "MongoDB"]}
+                            description="A full-stack geospatial intelligence platform for exploring historical satellite imagery, analyzing environmental changes through NDVI, NDWI, and NDBI, detecting fire hotspots, and generating AI-assisted research reports with PDF and CSV exports."
+                            techStack={["React", "Vite", "Tailwind CSS", "Mapbox GL JS", "Node.js", "Express.js", "Sentinel Hub", "NASA FIRMS", "Gemini API", "jsPDF"]}
                             githubLink="https://github.com/Radhikagupta25/GeoTime"
                             liveLink="https://geo-time-one.vercel.app/"
                         />

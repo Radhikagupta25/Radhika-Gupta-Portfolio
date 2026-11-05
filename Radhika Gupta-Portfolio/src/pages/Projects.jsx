@@ -51,9 +51,9 @@ const Projects = () => {
                     >
                         <ProjectCard
                             image={geoTimeImg}
-                            title="GeoTime"
-                            description="A full-stack geospatial intelligence platform for exploring historical satellite imagery and monitoring environmental changes, including vegetation health, deforestation, urban expansion, and fire activity."
-                            techStack={["React", "Vite", "Tailwind CSS", "Mapbox GL JS", "Node.js", "Express.js", "MongoDB"]}
+                            title="GeoTime - Geospatial Intelligence Platform"
+                            description="A full-stack geospatial intelligence platform for exploring historical satellite imagery, analyzing environmental changes through NDVI, NDWI, and NDBI, monitoring fire hotspots, and generating AI-assisted research reports with PDF and CSV exports."
+                            techStack={["React", "Vite", "Tailwind CSS", "Mapbox GL JS", "Node.js", "Express.js", "MongoDB", "Sentinel Hub", "NASA FIRMS", "Gemini API", "jsPDF"]}
                             githubLink="https://github.com/Radhikagupta25/GeoTime"
                             liveLink="https://geo-time-one.vercel.app/"
                         />
