@@ -43,7 +43,7 @@ const contacts = [
     icon: <FaFileAlt />,
     title: "Resume",
     value: "Download Resume",
-    link: "/RadhikaGupta_Resume.pdf",
+    link: "/RadhikaGupta_resume.pdf",
   },
 ];
 

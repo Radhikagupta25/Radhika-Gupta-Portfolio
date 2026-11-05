@@ -69,8 +69,8 @@ const Home = () => {
                     <div className="mt-10 flex flex-wrap justify-center gap-5 lg:justify-start">
 
                         <a
-                            href="/RadhikaGuptaResume.pdf"
-                            download="RadhikaGupta_Resume.pdf"
+                            href="/RadhikaGupta_resume.pdf"
+                            download="RadhikaGupta_resume.pdf"
                             className="rounded-xl bg-pink-500 px-7 py-3 font-semibold transition hover:bg-pink-600"
                         >
                             Download Resume
