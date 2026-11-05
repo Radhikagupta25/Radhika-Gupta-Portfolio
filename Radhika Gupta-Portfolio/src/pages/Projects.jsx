@@ -6,6 +6,7 @@ import ecommerceImg from "../assets/ProjectImages/ecommerceImg.png";
 import waveImg from "../assets/ProjectImages/waveImg.png"
 import authServiceImg from "../assets/ProjectImages/authServiceImg.png"
 import ToddlerToPhD from "../assets/ProjectImages/ToddlerToPhD.png"
+import geoTimeImg from "../assets/ProjectImages/geoTimeImg.png"
 
 const Projects = () => {
     return (
@@ -39,6 +40,22 @@ const Projects = () => {
                             techStack={["React", "Node.js", "Express.js", "MongoDB", "Socket.io", "JWT"]}
                             githubLink="https://github.com/Radhikagupta25/wave"
                             liveLink="https://wave-ashy-six.vercel.app/"
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 70 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: .5, delay: .3 }}
+                    >
+                        <ProjectCard
+                            image={geoTimeImg}
+                            title="GeoTime"
+                            description="A full-stack geospatial intelligence platform for exploring historical satellite imagery and monitoring environmental changes, including vegetation health, deforestation, urban expansion, and fire activity."
+                            techStack={["React", "Vite", "Tailwind CSS", "Mapbox GL JS", "Node.js", "Express.js", "MongoDB"]}
+                            githubLink="https://github.com/Radhikagupta25/GeoTime"
+                            liveLink="https://geo-time-one.vercel.app/"
                         />
                     </motion.div>
 

@@ -12,7 +12,7 @@ import ecommerceImg from "../assets/ProjectImages/ecommerceImg.png";
 import CodingProfileCard from "../components/CodingProfileCard";
 import { SiLeetcode, SiGeeksforgeeks, SiGithub } from "react-icons/si";
 import waveImg from "../assets/ProjectImages/waveImg.png"
-import authServiceImg from "../assets/ProjectImages/authServiceImg.png"
+import geoTimeImg from "../assets/ProjectImages/geoTimeImg.png"
 import profileImg from "../assets/ProjectImages/profileImg.png"
 
 const Home = () => {
@@ -70,7 +70,7 @@ const Home = () => {
 
                         <a
                             href="/RadhikaGuptaResume.pdf"
-                            download="RadhikaGuptaResume.pdf"
+                            download="RadhikaGupta_Resume.pdf"
                             className="rounded-xl bg-pink-500 px-7 py-3 font-semibold transition hover:bg-pink-600"
                         >
                             Download Resume
@@ -409,12 +409,12 @@ I believe that great software is built through curiosity, consistency, and conti
                         transition={{ duration: .5, delay: .3 }}
                     >
                         <ProjectCard
-                            image={authServiceImg}
-                            title="Authentication Service"
-                            description="A production-ready, reusable authentication backend with JWT auth, refresh token rotation, Google OAuth, email verification, and Swagger-documented APIs for seamless integration across MERN apps."
-                            techStack={["Node.js", "Express.js", "MongoDB", "JWT", "Swagger"]}
-                            githubLink="https://github.com/Radhikagupta25/Authentication-Service"
-                            liveLink=""
+                            image={geoTimeImg}
+                            title="GeoTime - Geospatial Intelligence Platform"
+                            description="A full-stack geospatial intelligence platform for exploring historical satellite imagery and monitoring environmental changes, including vegetation health, deforestation, urban expansion, and fire activity."
+                            techStack={["React", "Tailwind CSS", "Mapbox GL JS", "Node.js", "Express.js", "MongoDB"]}
+                            githubLink="https://github.com/Radhikagupta25/GeoTime"
+                            liveLink="https://geo-time-one.vercel.app/"
                         />
                     </motion.div>
 
